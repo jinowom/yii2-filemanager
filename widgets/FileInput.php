@@ -38,7 +38,7 @@ use yii\helpers\Url;
  * More samples of usage see on github: https://github.com/jinowom/yii2-filemanager
  *
  * @package jinowom\filemanager\widgets
- * @author Zabolotskikh Boris <zabolotskich@bk.ru>
+ * @author jinowom <chareler@163.com>
  */
 class FileInput extends InputWidget
 {
