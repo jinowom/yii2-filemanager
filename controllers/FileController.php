@@ -78,7 +78,7 @@ class FileController extends BaseController
      * Provides upload file
      * @return mixed
      */
-    public function actionUpload()
+    public function actionUploadFiles()
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
 

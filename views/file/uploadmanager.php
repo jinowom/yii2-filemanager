@@ -21,7 +21,7 @@ use yii\helpers\Html;
         'clientEvents' => [
             'fileuploadsubmit' => "function (e, data) { data.formData = [{name: 'tagIds', value: $('#filemanager-tagIds').val()}]; }",
         ],
-        'url' => ['upload'],
+        'url' => ['upload-files'],
         'gallery' => false,
         'formView' => '/file/_upload_form',
     ]) ?>
