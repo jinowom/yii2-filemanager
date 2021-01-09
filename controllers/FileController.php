@@ -4,7 +4,7 @@ namespace jinowom\filemanager\controllers;
 
 use jinowom\filemanager\models\MediafileSearch;
 use Yii;
-use yii\web\Controller;
+use backend\controllers\BaseController;//use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
 use jinowom\filemanager\Module;
@@ -12,7 +12,8 @@ use jinowom\filemanager\models\Mediafile;
 use jinowom\filemanager\assets\FilemanagerAsset;
 use yii\helpers\Url;
 
-class FileController extends Controller
+//class FileController extends Controller
+class FileController extends BaseController
 {
     public $enableCsrfValidation = false;
 
