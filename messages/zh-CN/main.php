@@ -24,6 +24,7 @@ return [
     'Thumbnails sizes has been resized successfully!' => '缩略图大小已成功修改!',
     'Do not forget every time you change thumbnails presets to make them resize.' => '你每一次调整缩略图预设，不要忘记重设它们的尺寸。',
     'Upload manager' => '上传管理',
+    'Search' => '搜索',
     'Back to file manager' => '返回文件管理',
     'Alt attribute' => 'ALT属性',
     'Changes not saved.' => '修改没有保存。',

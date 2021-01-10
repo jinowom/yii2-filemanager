@@ -15,10 +15,13 @@ use yii\bootstrap\ActiveForm;
 $this->params['moduleBundle'] = FilemanagerAsset::register($this);
 ?>
 
-<header id="header"><span class="glyphicon glyphicon-picture"></span> <?= Module::t('main', 'File manager') ?></header>
+<header id="header">
+   <!--<span class="glyphicon glyphicon-picture"></span>--> 
+    <h5><?= Module::t('main', 'File manager') ?></h5>
+</header>
 
 <div id="filemanager" data-url-info="<?= Url::to(['file/info']) ?>">
-
+    
 	<?php $searchForm = $this->render('_search_form', ['model' => $model]) ?>
     <?= ListView::widget([
         'dataProvider' => $dataProvider,
@@ -33,7 +36,7 @@ $this->params['moduleBundle'] = FilemanagerAsset::register($this);
                     );
             },
     ]) ?>
-
+   
     <div class="dashboard">
         <p><?= Html::a('<span class="glyphicon glyphicon-upload"></span> ' . Module::t('main', 'Upload manager'),
                 ['file/uploadmanager'], ['class' => 'btn btn-default']) ?></p>

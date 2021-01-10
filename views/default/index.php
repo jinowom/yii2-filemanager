@@ -12,16 +12,25 @@ $this->params['breadcrumbs'][] = $this->title;
 $assetPath = FilemanagerAsset::register($this)->baseUrl;
 ?>
 
+<!-- 面包屑 -->
+<?= \Yii::$app->view->renderFile('@app/views/public/breadcrumb.php')?>
+<!-- 面包屑 -->
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                 <div class="layui-card-body layui-table-body layui-table-main">
+                     
 <div class="filemanager-default-index">
-    <h1><?= Module::t('main', 'File manager module'); ?></h1>
+    <h5><?= Module::t('main', 'File manager module'); ?></h5>
 
     <div class="row">
         <div class="col-md-6">
 
             <div class="text-center">
-                <h2>
+                <h5>
                     <?= Html::a(Module::t('main', 'Files'), ['file/index']) ?>
-                </h2>
+                </h5>
                 <?= Html::a(
                     Html::img($assetPath . '/images/files.png', ['alt' => 'Files'])
                     , ['file/index']
@@ -32,9 +41,9 @@ $assetPath = FilemanagerAsset::register($this)->baseUrl;
         <div class="col-md-6">
 
             <div class="text-center">
-                <h2>
+                <h5>
                     <?= Html::a(Module::t('main', 'Settings'), ['default/settings']) ?>
-                </h2>
+                </h5>
                 <?= Html::a(
                     Html::img($assetPath . '/images/settings.png', ['alt' => 'Tools'])
                     , ['default/settings']
@@ -43,3 +52,10 @@ $assetPath = FilemanagerAsset::register($this)->baseUrl;
         </div>
     </div>
 </div>
+                     
+                 </div>
+            
+            </div>
+        </div>
+    </div>
+</div> 

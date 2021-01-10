@@ -8,7 +8,9 @@ use yii\helpers\Html;
 
 ?>
 
-<header id="header"><span class="glyphicon glyphicon-upload"></span> <?= Module::t('main', 'Upload manager') ?></header>
+<header id="header">
+    <p ><span class="glyphicon glyphicon-upload"></span><?= Module::t('main', 'Upload manager') ?></p>
+</header>
 
 <div id="uploadmanager">
     <p><?= Html::a('← ' . Module::t('main', 'Back to file manager'), ['file/filemanager']) ?></p>
